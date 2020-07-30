@@ -8,7 +8,7 @@ Docker 19.03.12 (This is a workspace's version, other versions might be compatia
 
 ### Set up Info
 1) OS : CentOS 7
-2) JDK : projdk 8, build number 242
+2) JDK : openjdk-8
 3) Theia : Theia 1.0.0^
 
 ### Directory layout                                                         
@@ -30,19 +30,13 @@ ${pwd}
 
 #### 1. Download a Theia Dockerfile 
 
-#### 2. Move JDK inside unzipped Tomcat directory
-
-```bash
-$ mv <projdk-version>.tar.gz <Theia-version>_<Change_version>
-```
-
-#### 3. Build an Docker Image.
+#### 2. Build an Docker Image.
 
 ```bash
 $ docker build -f ./Dockerfile --no-cache --force-rm  -t <name: ex)theia:v20.0> .
 ```
 
-#### 4. Generate a Container from Image.
+#### 3. Generate a Container from Image.
 
 ```bash
 $ docker run -it --init -p 3000:3000 -v "/home/project" <Image name>
