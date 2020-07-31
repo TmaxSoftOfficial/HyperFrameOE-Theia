@@ -1,48 +1,49 @@
 # HyperFrameOE-Theia
 
-This is a group of Theia Docker files with versions for HyperFrame Open Edition.
+This Theia docker file is for HyperFrame Open Edition.
 
 ### Prerequisites
 
-Docker 19.03.12 (This is a workspace's version, other versions might be compatiable with this.)
+Docker 19.03.12 (Workspace version, recommended)
 
-### Set up Info
-1) OS : CentOS 7
-2) JDK : openjdk-8
-3) Theia : Theia 1.0.0
+### Requirements
 
-### Directory layout                                                         
+1) OS: CentOS 7
+2) JDK: ProJDK 8 (build number 242)
+3) Theia: Theia 1.0.0
+
+### Directory Structure                                                            
 
 ```bash                                                                             
 ${pwd}   
 |- Theia-1.0.0
-|   |- plugins                                                               # plugin folder
+|   |- plugins                                                               # plugin files
 |   |   |- vscode-bosh-1.15.0-RC.1.vsix                                                  
 |   |   |- vscode-concourse-1.15.0-RC.1.vsix                                          
 |   |   |- vscode-manifest-yaml-1.15.0-RC.1                                          
 |   |   |- vscode-spring-boot-1.15.0-RC.1.vsix                                                     
-|   |- cf-cli_6.47.2_linux_x86-64.tgz                                        # command line client for Cloud Foundry                       
+|   |- cf-cli_6.47.2_linux_x86-64.tgz                                        # Command line client for Cloud Foundry                       
 |   |- nodesource.bat                                                        # Script to install the NodeSource Node.js
-|   |- package.json                                                          # Theia config file
+|   |- package.json                                                          # Theia configuration file
 |- README.md                                                   
 ```              
 
-### Installing
+### Installation Steps
 
-#### 1. Download a Theia Dockerfile 
+#### 1. Download Theia Dockerfile. 
 
-#### 2. Build an Docker Image.
+#### 2. Build a Docker Image.
 
 ```bash
 $ docker build -f ./Dockerfile --no-cache --force-rm  -t <name: ex)theia:v20.0> .
 ```
 
-#### 3. Generate a Container from Image.
+#### 3. Generate a Container from the Image.
 
 ```bash
 $ docker run -it --init -p 3000:3000 -v "/home/project" <Image name>
 ```
 
-## License
+### License 
 
-This project is licensed under the Apache-2.0
+Projects are licensed under the Apache 2.0 license.
