@@ -24,7 +24,7 @@ ${pwd}
 |   |- cf-cli_6.47.2_linux_x86-64.tgz                                        # command line client for Cloud Foundry                       
 |   |- nodesource.bat                                                        # Script to install the NodeSource Node.js
 |   |- package.json                                                          # Theia config file
-|   |- README.md                                                   
+|- README.md                                                   
 ```              
 
 ### Installing
