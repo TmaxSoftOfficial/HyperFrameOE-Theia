@@ -1,4 +1,4 @@
-# Theia
+# HyperFrameOE-Theia
 
 This is a group of Theia Docker files with versions for HyperFrame Open Edition.
 
