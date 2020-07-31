@@ -9,7 +9,7 @@ Docker 19.03.12 (This is a workspace's version, other versions might be compatia
 ### Set up Info
 1) OS : CentOS 7
 2) JDK : openjdk-8
-3) Theia : Theia 1.0.0^
+3) Theia : Theia 1.0.0
 
 ### Directory layout                                                         
 
