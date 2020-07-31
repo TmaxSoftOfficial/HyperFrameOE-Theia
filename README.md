@@ -34,7 +34,7 @@ ${pwd}
 #### 2. Build an Docker Image.
 
 ```bash
-$ docker build -f ./Dockerfile --no-cache --force-rm  -t <name: ex)theia:v20.0 > .
+$ docker build -f ./Dockerfile --no-cache --force-rm  -t <name: ex)theia:v20.0> .
 ```
 
 #### 3. Generate a Container from Image.
