@@ -14,16 +14,17 @@ Docker 19.03.12 (This is a workspace's version, other versions might be compatia
 ### Directory layout                                                         
 
 ```bash                                                                             
-${pwd}                                                                                             
-|- plugins                                                               # plugin folder
-|   |- vscode-bosh-1.15.0-RC.1.vsix                                                  
-|   |- vscode-concourse-1.15.0-RC.1.vsix                                          
-|   |- vscode-manifest-yaml-1.15.0-RC.1                                          
-|   |- vscode-spring-boot-1.15.0-RC.1.vsix                                                     
-|- cf-cli_6.47.2_linux_x86-64.tgz                                        # command line client for Cloud Foundry                       
-|- nodesource.bat                                                        # Script to install the NodeSource Node.js
-|- package.json                                                          # Theia config file
-|- README.md                                                   
+${pwd}   
+|- Theia-1.0.0
+|   |- plugins                                                               # plugin folder
+|   |   |- vscode-bosh-1.15.0-RC.1.vsix                                                  
+|   |   |- vscode-concourse-1.15.0-RC.1.vsix                                          
+|   |   |- vscode-manifest-yaml-1.15.0-RC.1                                          
+|   |   |- vscode-spring-boot-1.15.0-RC.1.vsix                                                     
+|   |- cf-cli_6.47.2_linux_x86-64.tgz                                        # command line client for Cloud Foundry                       
+|   |- nodesource.bat                                                        # Script to install the NodeSource Node.js
+|   |- package.json                                                          # Theia config file
+|   |- README.md                                                   
 ```              
 
 ### Installing
@@ -33,7 +34,7 @@ ${pwd}
 #### 2. Build an Docker Image.
 
 ```bash
-$ docker build -f ./Dockerfile --no-cache --force-rm  -t <name: ex)theia:v20.0> .
+$ docker build -f ./Dockerfile --no-cache --force-rm  -t <name: ex)theia:v20.0 > .
 ```
 
 #### 3. Generate a Container from Image.
